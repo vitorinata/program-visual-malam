@@ -3,8 +3,8 @@
         <body>
             <h3>Create Appointment</h3>
             <form id="form">
-                <label for="name">Namee:</label><br/>
-                <input type="text" name="number" required />
+                <label for="name">Name:</label><br/>
+                <input type="text" name="name" required />
                 <br /><br />
                 <label for="number">Phone Number:</label><br/>
                 <input type="number" name="number" required />
@@ -34,11 +34,11 @@
                     event.preventDefault();
 
                     for (let i = 0; i < form.elements.length; i++) {
-                        if (form.elements[i].type ="submit")
+                        if (form.elements[i].type !=="submit")
                         elements[form.elements[i].name] = form.elements[i].value;
                     }
 
-                    ipcRenderer.send("appointment:crete", elements);
+                    ipcRenderer.send("appointment:create", elements);
                 });
                 
             </script>
