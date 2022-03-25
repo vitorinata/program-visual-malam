@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^8.0.0",
+    "electron": "^13.6.6",
     "node-uuid": "^1.4.8",
     "save": "^2.4.0",
     "uuid": "^7.0.3",
